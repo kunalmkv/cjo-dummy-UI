@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytics — JourneyCraft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js"></script>
+</head>
+<body>
+  <div id="app-shell-slot">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <header class="page-header">
+        <div style="min-width:0">
+          <div class="page-eyebrow">Analytics</div>
+          <h1 class="page-title text-balance">What's working — and what's about to</h1>
+          <p class="page-desc text-pretty">Conversion funnels, cohort retention, channel performance and experiments. All in one place.</p>
+        </div>
+        <div class="page-actions">
+          <button class="btn btn-secondary btn-sm" id="b1"></button>
+          <button class="btn btn-secondary btn-sm" id="b2"></button>
+          <button class="btn btn-secondary btn-sm" id="b3"></button>
+          <button class="btn btn-primary btn-sm" id="b4"></button>
+        </div>
+      </header>
+
+      <div class="grid lg-grid-12" style="gap:20px">
+        <div class="card col-span-12 xl-col-7">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Conversion funnel</div>
+              <p class="card-desc">Visited → Signed up → Activated → Upgraded → Renewed</p>
+            </div>
+            <span class="badge badge-brand">Last 30d</span>
+          </div>
+          <div class="card-content" style="height:320px;padding-bottom:12px">
+            <svg viewBox="0 0 600 280" width="100%" height="100%" preserveAspectRatio="none">
+              <g stroke="var(--color-border)" stroke-dasharray="3 3" stroke-width="1">
+                <line x1="120" y1="40" x2="600" y2="40"/>
+                <line x1="120" y1="90" x2="600" y2="90"/>
+                <line x1="120" y1="140" x2="600" y2="140"/>
+                <line x1="120" y1="190" x2="600" y2="190"/>
+                <line x1="120" y1="240" x2="600" y2="240"/>
+              </g>
+              <g fill="var(--color-fg-subtle)" font-size="12">
+                <text x="116" y="44" text-anchor="end">Visited</text>
+                <text x="116" y="94" text-anchor="end">Signed up</text>
+                <text x="116" y="144" text-anchor="end">Activated</text>
+                <text x="116" y="194" text-anchor="end">Upgraded</text>
+                <text x="116" y="244" text-anchor="end">Renewed</text>
+              </g>
+              <rect x="120" y="30" width="460" height="22" rx="6" fill="var(--color-brand-500)"/>
+              <rect x="120" y="80" width="356" height="22" rx="6" fill="var(--color-brand-600)"/>
+              <rect x="120" y="130" width="276" height="22" rx="6" fill="var(--color-accent-500)"/>
+              <rect x="120" y="180" width="208" height="22" rx="6" fill="var(--color-accent-600)"/>
+              <rect x="120" y="230" width="152" height="22" rx="6" fill="var(--color-success-500)"/>
+              <g fill="var(--color-fg)" font-size="11" font-weight="600">
+                <text x="588" y="47" text-anchor="end" fill="#fff">184,210</text>
+                <text x="484" y="97" text-anchor="end" fill="#fff">24,180</text>
+                <text x="404" y="147" text-anchor="end" fill="#fff">11,240</text>
+                <text x="336" y="197" text-anchor="end" fill="#fff">4,180</text>
+                <text x="280" y="247" text-anchor="end" fill="#fff">2,840</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="card col-span-12 xl-col-5">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Cohort retention</div>
+              <p class="card-desc">Weekly retention of Nov 2026 cohort</p>
+            </div>
+            <span class="badge badge-success">+4.2 wk-over-wk</span>
+          </div>
+          <div class="card-content" style="height:320px;padding-bottom:12px">
+            <svg viewBox="0 0 600 280" width="100%" height="100%" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="rg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="var(--color-brand-500)" stop-opacity="0.9"/>
+                  <stop offset="100%" stop-color="var(--color-brand-500)" stop-opacity="0.3"/>
+                </linearGradient>
+              </defs>
+              <g stroke="var(--color-border)" stroke-dasharray="3 3"><line x1="40" y1="60" x2="600" y2="60"/><line x1="40" y1="120" x2="600" y2="120"/><line x1="40" y1="180" x2="600" y2="180"/><line x1="40" y1="240" x2="600" y2="240"/></g>
+              <g fill="var(--color-fg-subtle)" font-size="11">
+                <text x="36" y="64" text-anchor="end">100%</text>
+                <text x="36" y="124" text-anchor="end">75%</text>
+                <text x="36" y="184" text-anchor="end">50%</text>
+                <text x="36" y="244" text-anchor="end">25%</text>
+              </g>
+              <g>
+                ${[100,82,71,64,58,54,51,49,47].map((v, i) => {
+                  const x = 60 + i * 58;
+                  const h = (v / 100) * 200;
+                  const y = 250 - h;
+                  return `<rect x="${x}" y="${y}" width="40" height="${h}" rx="6" fill="url(#rg)"/><text x="${x + 20}" y="265" text-anchor="middle" fill="var(--color-fg-subtle)" font-size="10">W${i}</text>`;
+                }).join('')}
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="card col-span-12 xl-col-7">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Channel performance</div>
+              <p class="card-desc">Aggregate delivery, engagement and revenue</p>
+            </div>
+          </div>
+          <div class="card-content" style="padding:0">
+            <table class="tbl">
+              <thead><tr>
+                <th>Channel</th>
+                <th class="th-right">Delivered</th>
+                <th class="th-right">Open</th>
+                <th class="th-right">Click</th>
+                <th class="th-right">Revenue</th>
+                <th class="th-right">Δ</th>
+              </tr></thead>
+              <tbody id="ch-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card col-span-12 xl-col-5">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Experiments</div>
+              <p class="card-desc">A/B tests across journeys, landers, campaigns</p>
+            </div>
+            <button class="text-brand" style="font-size:12px;font-weight:500">View all</button>
+          </div>
+          <div class="card-content" id="exps"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="icons.js"></script>
+  <script src="shell.js"></script>
+  <script>
+    renderAppShell('analytics.html');
+    document.getElementById('b1').innerHTML = icon('filter','4') + ' Filter';
+    document.getElementById('b2').innerHTML = icon('calendar','4') + ' Last 30 days';
+    document.getElementById('b3').innerHTML = icon('git-compare-arrows','4') + ' Compare';
+    document.getElementById('b4').innerHTML = icon('download','4') + ' Export';
+
+    const channels = [
+      { name: 'Email', delivered: '412,180', open: '62.4%', click: '12.4%', revenue: '$92,410', delta: 8.2 },
+      { name: 'Push', delivered: '84,210', open: '—', click: '8.4%', revenue: '$18,940', delta: 4.1 },
+      { name: 'SMS', delivered: '22,840', open: '—', click: '6.1%', revenue: '$11,210', delta: -1.2 },
+      { name: 'In-app', delivered: '184,210', open: '—', click: '21.4%', revenue: '$42,180', delta: 14.4 },
+    ];
+    document.getElementById('ch-body').innerHTML = channels.map(c => `
+      <tr>
+        <td class="fw-500">${c.name}</td>
+        <td class="td-right tabular">${c.delivered}</td>
+        <td class="td-right tabular">${c.open}</td>
+        <td class="td-right tabular">${c.click}</td>
+        <td class="td-right tabular fw-500">${c.revenue}</td>
+        <td class="td-right"><span class="${c.delta >= 0 ? 'text-success' : 'text-danger'} fw-600 tabular row-center" style="font-size:12px;justify-content:flex-end;gap:2px">${icon(c.delta >= 0 ? 'arrow-up-right' : 'arrow-down-right','3')} ${Math.abs(c.delta)}%</span></td>
+      </tr>
+    `).join('');
+
+    const tests = [
+      { name: 'Pricing CTA · variant B', lift: 12.3, conf: 94, status: 'Winning' },
+      { name: 'Trial onboarding · 7d delay', lift: 4.1, conf: 81, status: 'Running' },
+      { name: 'Promoter survey · subject test', lift: -2.4, conf: 92, status: 'Losing' },
+      { name: 'Black Friday hero · animation', lift: 0.8, conf: 64, status: 'Inconclusive' },
+    ];
+    document.getElementById('exps').innerHTML = tests.map(t => `
+      <div style="border:1px solid var(--color-border);border-radius:var(--radius-md);padding:12px;margin-bottom:8px">
+        <div class="row-between" style="gap:8px;align-items:flex-start">
+          <div style="min-width:0">
+            <div class="fw-500 truncate" style="font-size:13px">${t.name}</div>
+            <div class="text-muted" style="font-size:11px;margin-top:2px">Confidence ${t.conf}% · ${t.status}</div>
+          </div>
+          <span class="${t.lift >= 0 ? 'text-success' : 'text-danger'} fw-600 tabular" style="font-size:12px;flex-shrink:0">${t.lift >= 0 ? '+' : ''}${t.lift}%</span>
+        </div>
+        <div class="bar-thin" style="margin-top:8px"><div style="width:${t.conf}%;background:${t.lift >= 0 ? 'var(--color-success-500)' : 'var(--color-danger-500)'};height:100%"></div></div>
+      </div>
+    `).join('');
+  </script>
+</body>
+</html>

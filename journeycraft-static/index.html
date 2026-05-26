@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JourneyCraft — Customer journeys, beautifully crafted.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js"></script>
+</head>
+<body>
+  <div id="marketing-nav-slot"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="mesh-bg" style="position:absolute;inset:0;pointer-events:none"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <a href="#" class="hero-pill">
+          <span class="badge badge-brand">New</span>
+          <span class="text-muted">AI subject-line testing is live</span>
+          <span class="text-subtle" id="hero-arrow"></span>
+        </a>
+        <h1 class="hero-title text-balance">
+          Customer journeys,<br/>
+          <span class="gradient-text">beautifully crafted.</span>
+        </h1>
+        <p class="hero-desc text-pretty">
+          Orchestrate email, push, SMS and in-app from a single visual canvas. Clone any landing page in seconds. Ship the whole growth motion from one calm workspace.
+        </p>
+        <div class="hero-ctas">
+          <a href="dashboard.html" class="btn btn-primary btn-lg">Start free 14-day trial <span id="hero-arr2"></span></a>
+          <a href="#journeys" class="btn btn-secondary btn-lg">See it in action</a>
+        </div>
+        <ul class="hero-trust">
+          <li id="trust-1">No credit card needed</li>
+          <li id="trust-2">SOC 2 · HIPAA-ready</li>
+          <li id="trust-3">GDPR + DPA</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="flow-graphic">
+          <div class="flow-card">
+            <div class="flow-titlebar">
+              <div class="macdots"><span></span><span></span><span></span></div>
+              <span class="font-mono" style="font-size:10.5px;color:var(--color-fg-muted)">welcome-onboarding · v4</span>
+              <span class="badge badge-success badge-dot">Live</span>
+            </div>
+            <div class="flow-stage">
+              <div class="dot-bg"></div>
+              <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 1080 280" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                  <marker id="h-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--color-border-strong)"/>
+                  </marker>
+                  <marker id="h-arr-y" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--color-success-500)"/>
+                  </marker>
+                  <marker id="h-arr-n" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--color-accent-500)"/>
+                  </marker>
+                </defs>
+                <path d="M 160 158 C 200 158, 200 158, 200 158" fill="none" stroke="var(--color-border-strong)" stroke-width="1.5" marker-end="url(#h-arr)" class="flow-line"/>
+                <path d="M 340 158 C 400 158, 320 88, 380 88" fill="none" stroke="var(--color-border-strong)" stroke-width="1.5" marker-end="url(#h-arr)"/>
+                <path d="M 340 158 C 400 158, 320 228, 380 228" fill="none" stroke="var(--color-border-strong)" stroke-width="1.5" marker-end="url(#h-arr)"/>
+                <path d="M 520 88 C 580 88, 500 88, 560 88" fill="none" stroke="var(--color-border-strong)" stroke-width="1.5" marker-end="url(#h-arr)"/>
+                <path d="M 700 88 C 760 88, 680 48, 740 48" fill="none" stroke="var(--color-success-500)" stroke-width="1.5" marker-end="url(#h-arr-y)"/>
+                <path d="M 700 88 C 760 88, 680 128, 740 128" fill="none" stroke="var(--color-accent-500)" stroke-width="1.5" marker-end="url(#h-arr-n)"/>
+                <path d="M 880 48 C 900 48, 880 158, 920 158" fill="none" stroke="var(--color-border-strong)" stroke-width="1.5" marker-end="url(#h-arr)"/>
+                <path d="M 880 128 C 900 128, 880 158, 920 158" fill="none" stroke="var(--color-border-strong)" stroke-width="1.5" marker-end="url(#h-arr)"/>
+                <path d="M 520 228 C 580 228, 520 158, 920 158" fill="none" stroke="var(--color-border-strong)" stroke-width="1.5" marker-end="url(#h-arr)"/>
+              </svg>
+              <div id="flow-nodes" style="position:absolute;inset:0"></div>
+            </div>
+            <div class="mini-stats">
+              <div class="mini-stat"><div class="mini-stat-label">Enrolled</div><div class="mini-stat-value">24,180</div></div>
+              <div class="mini-stat"><div class="mini-stat-label">Conversion</div><div class="mini-stat-value">38% <span style="font-size:10.5px" class="text-success">+12.4%</span></div></div>
+              <div class="mini-stat"><div class="mini-stat-label">Revenue</div><div class="mini-stat-value">$92,410</div></div>
+            </div>
+          </div>
+
+          <div class="float-chip" style="top:-16px;left:-16px">
+            <span class="float-chip-icon" id="chip-1-icon" style="background:linear-gradient(135deg,var(--color-brand-500),color-mix(in oklch,var(--color-brand-500) 70%,black))"></span>
+            <div style="min-width:0"><div class="float-chip-title truncate">AI rewrote the subject</div><div class="float-chip-sub truncate">Variant B wins +18%</div></div>
+          </div>
+          <div class="float-chip" style="bottom:-12px;right:-12px">
+            <span class="float-chip-icon" id="chip-2-icon" style="background:linear-gradient(135deg,var(--color-success-500),color-mix(in oklch,var(--color-success-500) 70%,black))"></span>
+            <div style="min-width:0"><div class="float-chip-title truncate">Goal reached</div><div class="float-chip-sub truncate">938 upgraded today</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journeys -->
+  <section id="journeys" class="section">
+    <div class="section-inner">
+      <div class="s-grid reverse">
+        <div class="s-grid-text">
+          <span class="badge badge-brand">Visual Journey Builder</span>
+          <h2 class="s-title text-balance">Map every step a customer takes — then automate it.</h2>
+          <p class="s-desc text-pretty">Drag triggers, branches, waits and messages onto a canvas. Branch by behavior, lifecycle stage, plan, or anything in your warehouse. Ship in minutes, not sprints.</p>
+          <ul class="s-features" id="jr-features"></ul>
+          <a href="journeys.html" class="s-readmore">Open the journey builder <span id="rm-arr-1"></span></a>
+        </div>
+        <div class="s-grid-visual">
+          <div class="card" style="padding:16px;overflow:hidden">
+            <div class="dot-bg" style="height:280px;border-radius:var(--radius-md);border:1px solid var(--color-border);background-color:var(--color-bg-muted);position:relative">
+              <div id="jr-canvas" style="position:absolute;inset:0;padding:16px"></div>
+            </div>
+            <div class="mini-stats">
+              <div class="mini-stat"><div class="mini-stat-label">Open</div><div class="mini-stat-value">62.4%</div></div>
+              <div class="mini-stat"><div class="mini-stat-label">Click</div><div class="mini-stat-value">18.2%</div></div>
+              <div class="mini-stat"><div class="mini-stat-label">Upgrade</div><div class="mini-stat-value">38%</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Landers -->
+  <section id="landers" class="section">
+    <div class="section-inner">
+      <div class="s-grid">
+        <div class="s-grid-text">
+          <span class="badge badge-brand">Lander Clone Maker</span>
+          <h2 class="s-title text-balance">Paste a URL. Get a fully editable replica.</h2>
+          <p class="s-desc text-pretty">We pull the structure, copy, assets and brand palette — and rebuild the page as editable blocks. Restyle, swap, publish on your own domain in minutes.</p>
+          <ul class="s-features" id="ld-features"></ul>
+          <a href="landers.html" class="s-readmore">Try the lander cloner <span id="rm-arr-2"></span></a>
+        </div>
+        <div class="s-grid-visual">
+          <div class="card" style="overflow:hidden">
+            <div class="flow-titlebar" style="padding:8px 12px;border-bottom:1px solid var(--color-border);background:var(--color-bg-muted)">
+              <div class="macdots"><span></span><span></span><span></span></div>
+              <span class="font-mono truncate" style="font-size:10.5px;color:var(--color-fg-muted);margin-left:12px">paste url → yoursite.com/pricing</span>
+              <span style="margin-left:auto;display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:600;color:var(--color-success-500)">
+                <span class="dot-color pulse-dot" style="background:var(--color-success-500)"></span> cloned
+              </span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));min-height:320px">
+              <div style="grid-column:span 3 / span 3;border-right:1px solid var(--color-border);background:var(--color-bg-muted);padding:8px">
+                <div class="group-label" style="padding:0 6px">Layers</div>
+                <div style="padding:0 6px;font-size:10.5px">
+                  <div style="padding:4px 6px;border-radius:4px;color:var(--color-fg-muted)">Nav</div>
+                  <div style="padding:4px 6px;border-radius:4px;background:color-mix(in oklch,var(--color-brand-500) 14%,transparent);color:var(--color-brand-700);font-weight:500">Hero</div>
+                  <div style="padding:4px 6px;border-radius:4px;color:var(--color-fg-muted)">Logos</div>
+                  <div style="padding:4px 6px;border-radius:4px;color:var(--color-fg-muted)">Pricing</div>
+                  <div style="padding:4px 6px;border-radius:4px;color:var(--color-fg-muted)">FAQ</div>
+                  <div style="padding:4px 6px;border-radius:4px;color:var(--color-fg-muted)">Footer</div>
+                </div>
+              </div>
+              <div style="grid-column:span 9 / span 9;padding:16px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center">
+                <span style="display:inline-flex;align-items:center;padding:2px 8px;border-radius:4px;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--color-brand-600);background:color-mix(in oklch,var(--color-brand-500) 12%,transparent)">Now in public beta</span>
+                <h3 class="font-display" style="margin-top:8px;font-size:22px;font-weight:700;line-height:1.1;letter-spacing:-.02em;display:inline-block;padding:0 4px;border-radius:4px;box-shadow:0 0 0 2px var(--color-brand-500),0 0 0 4px var(--color-bg-elev)">Customer journeys,<br/>beautifully crafted.</h3>
+                <p class="text-muted" style="margin-top:8px;font-size:10.5px;max-width:260px">One workspace to orchestrate emails, push, SMS and landers.</p>
+                <div style="margin-top:12px;display:flex;align-items:center;gap:6px">
+                  <span style="height:28px;padding:0 12px;border-radius:6px;font-size:10px;font-weight:600;display:inline-flex;align-items:center;background:var(--color-fg);color:var(--color-bg)">Start free trial</span>
+                  <span style="height:28px;padding:0 12px;border-radius:6px;font-size:10px;font-weight:600;display:inline-flex;align-items:center;border:1px solid var(--color-border-strong)">Book a demo</span>
+                </div>
+                <div style="margin-top:16px;width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+                  <div style="border-radius:4px;border:1px solid var(--color-border);background:var(--color-bg-muted);padding:8px;text-align:left"><div style="font-size:9px;font-weight:600;text-transform:uppercase">Starter</div><div class="font-display" style="font-size:12px;font-weight:700;margin-top:2px">$0</div></div>
+                  <div style="border-radius:4px;border:1px solid var(--color-brand-500);background:color-mix(in oklch,var(--color-brand-500) 8%,transparent);padding:8px;text-align:left"><div style="font-size:9px;font-weight:600;text-transform:uppercase">Pro</div><div class="font-display" style="font-size:12px;font-weight:700;margin-top:2px">$49</div></div>
+                  <div style="border-radius:4px;border:1px solid var(--color-border);background:var(--color-bg-muted);padding:8px;text-align:left"><div style="font-size:9px;font-weight:600;text-transform:uppercase">Team</div><div class="font-display" style="font-size:12px;font-weight:700;margin-top:2px">$199</div></div>
+                </div>
+              </div>
+            </div>
+            <div style="border-top:1px solid var(--color-border);background:var(--color-bg-muted);padding:8px 12px;display:flex;align-items:center;justify-content:space-between;font-size:10.5px">
+              <span class="text-muted">22 sections · 62 images · 9 color tokens</span>
+              <span style="display:inline-flex;align-items:center;gap:4px;font-weight:600;color:var(--color-brand-600)">Open in editor <span id="ld-arr"></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Channels -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="badge badge-brand">Every channel, one composer</span>
+        <h2 class="s-title text-balance">Reach customers where they actually pay attention.</h2>
+        <p class="s-desc text-pretty">Six channels under one schema. Personalize once, deliver everywhere — with the same audience and analytics.</p>
+      </div>
+      <div class="ch-grid" id="ch-grid"></div>
+    </div>
+  </section>
+
+  <!-- Analytics -->
+  <section id="analytics" class="section">
+    <div class="section-inner">
+      <div class="s-grid reverse">
+        <div class="s-grid-text">
+          <span class="badge badge-brand">Analytics that close the loop</span>
+          <h2 class="s-title text-balance">See revenue attribution down to the step.</h2>
+          <p class="s-desc text-pretty">Funnels, cohort retention, experiments and channel ROI — all auto-instrumented. Stop guessing which touch moved the needle.</p>
+          <ul class="s-features" id="an-features"></ul>
+          <a href="analytics.html" class="s-readmore">Open analytics <span id="rm-arr-3"></span></a>
+        </div>
+        <div class="s-grid-visual">
+          <div class="card" style="padding:16px">
+            <div class="row-between">
+              <div>
+                <div class="group-label">Conversion funnel · 30d</div>
+                <div class="font-display fw-600" style="font-size:15px;margin-top:2px">Visited → Renewed</div>
+              </div>
+              <span class="badge badge-success">+12.4% vs prev</span>
+            </div>
+            <div style="margin-top:16px;display:flex;flex-direction:column;gap:8px;font-size:11.5px">
+              <div class="row-center gap-3"><span class="text-muted" style="width:64px;flex-shrink:0">Visited</span><div style="flex:1;height:28px;border-radius:6px;background:var(--color-bg-muted);position:relative;overflow:hidden"><div style="height:100%;width:100%;background:linear-gradient(90deg,var(--color-brand-500),var(--color-brand-700));border-radius:6px"></div></div><span class="tabular fw-600" style="width:64px;text-align:right">184,210</span></div>
+              <div class="row-center gap-3"><span class="text-muted" style="width:64px;flex-shrink:0">Signed up</span><div style="flex:1;height:28px;border-radius:6px;background:var(--color-bg-muted);position:relative;overflow:hidden"><div style="height:100%;width:77%;background:linear-gradient(90deg,var(--color-brand-500),var(--color-brand-700));border-radius:6px"></div></div><span class="tabular fw-600" style="width:64px;text-align:right">24,180</span></div>
+              <div class="row-center gap-3"><span class="text-muted" style="width:64px;flex-shrink:0">Activated</span><div style="flex:1;height:28px;border-radius:6px;background:var(--color-bg-muted);position:relative;overflow:hidden"><div style="height:100%;width:60%;background:linear-gradient(90deg,var(--color-brand-500),var(--color-brand-700));border-radius:6px"></div></div><span class="tabular fw-600" style="width:64px;text-align:right">11,240</span></div>
+              <div class="row-center gap-3"><span class="text-muted" style="width:64px;flex-shrink:0">Upgraded</span><div style="flex:1;height:28px;border-radius:6px;background:var(--color-bg-muted);position:relative;overflow:hidden"><div style="height:100%;width:46%;background:linear-gradient(90deg,var(--color-brand-500),var(--color-brand-700));border-radius:6px"></div></div><span class="tabular fw-600" style="width:64px;text-align:right">4,180</span></div>
+              <div class="row-center gap-3"><span class="text-muted" style="width:64px;flex-shrink:0">Renewed</span><div style="flex:1;height:28px;border-radius:6px;background:var(--color-bg-muted);position:relative;overflow:hidden"><div style="height:100%;width:34%;background:linear-gradient(90deg,var(--color-brand-500),var(--color-brand-700));border-radius:6px"></div></div><span class="tabular fw-600" style="width:64px;text-align:right">2,840</span></div>
+            </div>
+            <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--color-border);display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+              <div class="mini-stat"><div class="mini-stat-label">Revenue</div><div class="mini-stat-value">$184K</div></div>
+              <div class="mini-stat"><div class="mini-stat-label">CAC payback</div><div class="mini-stat-value">2.1mo</div></div>
+              <div class="mini-stat"><div class="mini-stat-label">LTV / CAC</div><div class="mini-stat-value">6.4×</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section mesh-bg">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="badge badge-brand">Pricing</span>
+        <h2 class="s-title text-balance">Simple, usage-based pricing</h2>
+        <p class="s-desc text-pretty">Start free. Scale when you do. No charge for the same person reached on multiple channels.</p>
+        <div class="seg" style="margin-top:24px">
+          <button class="active">Monthly</button>
+          <button>Yearly <span class="badge badge-accent" style="margin-left:6px">−20%</span></button>
+        </div>
+      </div>
+      <div class="pricing-grid" id="pricing-grid"></div>
+      <p class="text-center text-muted" style="margin-top:32px;font-size:12.5px">All plans include unlimited campaigns, audience segments and 24/7 status monitoring.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="customers" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="badge badge-brand">Who it's for</span>
+        <h2 class="s-title text-balance">Built for the teams that ship growth every week</h2>
+        <p class="s-desc text-pretty">From scrappy startups to mature product teams — JourneyCraft is shaped around the way lifecycle, growth and product marketing actually work.</p>
+        <p style="margin-top:12px;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;font-weight:600;color:var(--color-fg-subtle)">Sample quotes · illustrative</p>
+      </div>
+      <div class="t-grid" id="t-grid"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-card">
+      <div class="cta-inner mesh-bg">
+        <div class="cta-text">
+          <h2 class="font-display fw-600 t-36 text-balance" style="letter-spacing:-.02em;line-height:1.05">Start crafting calmer customer journeys today.</h2>
+          <p class="text-muted text-pretty" style="font-size:15.5px;line-height:1.6;margin-top:16px;max-width:36rem">14 days, no credit card. Import from your current tool in one click and try the whole platform — journeys, campaigns, landers and analytics.</p>
+          <div class="hero-ctas">
+            <a href="dashboard.html" class="btn btn-primary btn-lg">Start free trial</a>
+            <a href="#" class="btn btn-secondary btn-lg">Talk to sales</a>
+          </div>
+          <ul class="hero-trust" id="cta-trust"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="marketing-footer-slot"></div>
+
+  <script src="icons.js"></script>
+  <script src="shell.js"></script>
+  <script>
+    // Render shells
+    renderMarketingShell();
+
+    // Inject icons into static spots
+    document.getElementById('hero-arrow').innerHTML = icon('arrow-right', '3');
+    document.getElementById('hero-arr2').innerHTML = icon('arrow-right', '4');
+    document.getElementById('rm-arr-1').innerHTML = icon('chevron-right', '3p5');
+    document.getElementById('rm-arr-2').innerHTML = icon('chevron-right', '3p5');
+    document.getElementById('rm-arr-3').innerHTML = icon('chevron-right', '3p5');
+    document.getElementById('ld-arr').innerHTML = icon('arrow-right', '3');
+    document.getElementById('chip-1-icon').innerHTML = icon('sparkles', '3p5');
+    document.getElementById('chip-2-icon').innerHTML = icon('target', '3p5');
+    document.getElementById('trust-1').innerHTML = icon('check', '3p5') + ' No credit card needed';
+    document.getElementById('trust-2').innerHTML = icon('check', '3p5') + ' SOC 2 · HIPAA-ready';
+    document.getElementById('trust-3').innerHTML = icon('check', '3p5') + ' GDPR + DPA';
+    document.getElementById('cta-trust').innerHTML = ['Free 14-day trial', 'Import from your current tool', 'Cancel anytime'].map(t => `<li>${icon('check','3p5')} ${t}</li>`).join('');
+
+    // Hero flow nodes
+    const NW = 140, NH = 56;
+    const heroNodes = [
+      { x: 20, y: 130, label: 'Signed up', icon: 'zap', hue: 258, status: 'live' },
+      { x: 200, y: 130, label: 'Wait 5m', icon: 'clock', hue: 230 },
+      { x: 380, y: 60, label: 'Welcome', icon: 'mail', hue: 220 },
+      { x: 380, y: 200, label: 'Push', icon: 'bell', hue: 200 },
+      { x: 560, y: 60, label: 'Branch', icon: 'git-branch', hue: 280 },
+      { x: 740, y: 20, label: 'SMS', icon: 'message-square', hue: 150 },
+      { x: 740, y: 100, label: 'Day 2 email', icon: 'mail', hue: 220 },
+      { x: 920, y: 130, label: 'Upgraded', icon: 'target', hue: 140, status: 'live' },
+    ];
+    document.getElementById('flow-nodes').innerHTML = heroNodes.map(n => `
+      <div class="flow-node" style="left:${n.x}px;top:${n.y}px;width:${NW}px;height:${NH}px;transform:scale(0.55);transform-origin:0 0">
+        <span style="position:absolute;top:-1px;left:8px;right:8px;height:2px;border-radius:0 0 999px 999px;background:oklch(0.65 0.2 ${n.hue})"></span>
+        <div class="row-center gap-2">
+          <span class="flow-icon-bullet" style="background:linear-gradient(135deg,oklch(0.62 0.18 ${n.hue}),oklch(0.5 0.2 ${n.hue}))">${icon(n.icon, '3')}</span>
+          <span class="flow-node-title truncate">${n.label}</span>
+          ${n.status === 'live' ? `<span class="dot-color pulse-dot" style="background:var(--color-success-500);margin-left:auto"></span>` : ''}
+        </div>
+        <div class="flow-node-subtitle truncate">${n.label === 'Signed up' ? 'user.created' : n.label === 'Upgraded' ? 'user.plan = pro' : '—'}</div>
+      </div>
+    `).join('');
+
+    // Journey-section mini canvas (5-node simplified)
+    const jrNodes = [
+      { x: 0, y: 56, label: 'Signed up', icon: 'zap', hue: 258 },
+      { x: 132, y: 56, label: 'Wait 1 day', icon: 'send', hue: 230 },
+      { x: 264, y: 16, label: 'Pro tour', icon: 'mail', hue: 220 },
+      { x: 264, y: 100, label: 'Push install', icon: 'bell', hue: 200 },
+      { x: 396, y: 56, label: 'Upgraded', icon: 'target', hue: 140 },
+    ];
+    document.getElementById('jr-canvas').innerHTML = `
+      <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 540 200" preserveAspectRatio="xMidYMid meet">
+        <path d="M 120 76 C 140 76, 120 76, 140 76" stroke="var(--color-border-strong)" stroke-width="1.5" fill="none"/>
+        <path d="M 252 76 C 280 76, 260 36, 280 36" stroke="var(--color-success-500)" stroke-width="1.5" fill="none"/>
+        <path d="M 252 76 C 280 76, 260 120, 280 120" stroke="var(--color-accent-500)" stroke-width="1.5" fill="none"/>
+        <path d="M 384 36 C 410 36, 396 76, 416 76" stroke="var(--color-border-strong)" stroke-width="1.5" fill="none"/>
+        <path d="M 384 120 C 410 120, 396 76, 416 76" stroke="var(--color-border-strong)" stroke-width="1.5" fill="none"/>
+      </svg>
+      ${jrNodes.map(n => `
+        <div class="flow-node" style="left:${n.x}px;top:${n.y}px;width:120px">
+          <span style="position:absolute;top:-1px;left:8px;right:8px;height:2px;border-radius:0 0 999px 999px;background:oklch(0.65 0.2 ${n.hue})"></span>
+          <div class="row-center gap-2">
+            <span class="flow-icon-bullet" style="background:linear-gradient(135deg,oklch(0.62 0.18 ${n.hue}),oklch(0.5 0.2 ${n.hue}))">${icon(n.icon, '3')}</span>
+            <span class="flow-node-title truncate">${n.label}</span>
+          </div>
+        </div>
+      `).join('')}
+    `;
+
+    // s-features lists
+    const jrFeatures = [
+      { icon: 'zap', title: 'Realtime triggers', desc: 'Events from your app fire within 200ms.' },
+      { icon: 'layers', title: 'Branch on anything', desc: 'Plan, behavior, location, score, custom traits.' },
+      { icon: 'wand-2', title: 'AI subject testing', desc: 'Auto-pick the winning variant after 1,000 sends.' },
+      { icon: 'webhook', title: 'Webhooks & actions', desc: 'Trigger jobs in your stack at any node.' },
+    ];
+    const ldFeatures = [
+      { icon: 'globe-2', title: '30-second clone', desc: 'HTML, images, fonts, color tokens.' },
+      { icon: 'mouse-pointer', title: 'Block-based editor', desc: 'Edit copy, swap images, restyle in-place.' },
+      { icon: 'type', title: 'Brand-safe rewrites', desc: 'AI rewrites copy in your tone of voice.' },
+      { icon: 'shield', title: 'Publish anywhere', desc: 'Your domain, our edge — or export the HTML.' },
+    ];
+    const anFeatures = [
+      { icon: 'bar-chart-3', title: 'Funnels & cohorts', desc: 'Slice by segment, channel, journey or step.' },
+      { icon: 'target', title: 'Goal-based attribution', desc: 'Multi-touch credit, first-touch, last-touch.' },
+      { icon: 'sparkles', title: 'Experiments built-in', desc: 'Significance, lift and confidence in-line.' },
+      { icon: 'code-2', title: 'Warehouse sync', desc: 'Stream events into your data warehouse.' },
+    ];
+    function renderFeatures(target, items) {
+      document.getElementById(target).innerHTML = items.map(it => `
+        <li class="s-feature">
+          <span class="glyph">${icon(it.icon, '3p5')}</span>
+          <div class="s-feature-title">${it.title}</div>
+          <p class="s-feature-desc">${it.desc}</p>
+        </li>
+      `).join('');
+    }
+    renderFeatures('jr-features', jrFeatures);
+    renderFeatures('ld-features', ldFeatures);
+    renderFeatures('an-features', anFeatures);
+
+    // Channels
+    const channels = [
+      { icon: 'mail', name: 'Email', copy: 'Drag-drop or code. Hand-tuned deliverability.', hue: 220 },
+      { icon: 'bell', name: 'Push', copy: 'iOS, Android & web push from one composer.', hue: 200 },
+      { icon: 'message-square', name: 'SMS', copy: 'Two-way SMS with carrier-grade deliverability.', hue: 150 },
+      { icon: 'smartphone', name: 'In-app', copy: 'Tooltips, banners, modals — no code deploy.', hue: 320 },
+      { icon: 'webhook', name: 'Webhooks', copy: 'Trigger any system in your stack.', hue: 40 },
+      { icon: 'bot', name: 'AI assistants', copy: 'Conversational outreach across channels.', hue: 70 },
+    ];
+    document.getElementById('ch-grid').innerHTML = channels.map(c => `
+      <div class="ch-card">
+        <span style="background:oklch(0.7 0.18 ${c.hue})" class="ch-bg-blur"></span>
+        <style></style>
+        <span class="ch-icon" style="background:linear-gradient(135deg,oklch(0.62 0.18 ${c.hue}),oklch(0.5 0.2 ${c.hue}))">${icon(c.icon, '4p5')}</span>
+        <div class="ch-name">${c.name}</div>
+        <p class="ch-copy">${c.copy}</p>
+      </div>
+    `).join('');
+    // hack ch-card::before per element
+    document.querySelectorAll('.ch-card').forEach((el, i) => {
+      const ch = channels[i];
+      el.style.setProperty('--hue', ch.hue);
+    });
+
+    // Pricing tiers
+    const tiers = [
+      { name: 'Free', price: '$0', period: 'forever', desc: 'Everything to ship your first journey.', cta: 'Get started', primary: false,
+        features: ['Up to 1,000 people', 'Unlimited email & in-app', '1 active journey', 'Community support'] },
+      { name: 'Pro', price: '$49', period: '/mo', desc: 'For growing teams. Most popular.', cta: 'Start free trial', primary: true, featured: true,
+        features: ['Up to 50,000 people', 'Email, push, SMS, in-app', 'Unlimited journeys & campaigns', 'AI subject + content testing', 'Lander cloner (100 pages)', 'Email & chat support'] },
+      { name: 'Team', price: '$199', period: '/mo', desc: 'Advanced workflows + SSO.', cta: 'Start free trial', primary: false,
+        features: ['Up to 500,000 people', 'Roles, audit log, SSO/SAML', 'Reverse ETL to warehouse', 'Custom domains + edge hosting', 'Priority support + uptime SLA'] },
+      { name: 'Enterprise', price: 'Custom', period: '', desc: 'For high-volume teams.', cta: 'Talk to sales', primary: false,
+        features: ['Unlimited people', 'Dedicated infrastructure', 'Private model deployment', 'HIPAA, BAA, custom contracts', 'TAM + onboarding'] },
+    ];
+    document.getElementById('pricing-grid').innerHTML = tiers.map(t => `
+      <div class="tier ${t.featured ? 'tier-featured' : ''}">
+        ${t.featured ? `<span class="badge badge-brand tier-popular">${icon('sparkles', '3')} Most popular</span>` : ''}
+        <div class="tier-name">${t.name}</div>
+        <div class="tier-price"><span class="tier-amount">${t.price}</span><span class="tier-period">${t.period}</span></div>
+        <p class="tier-desc">${t.desc}</p>
+        <a href="dashboard.html" class="btn ${t.primary ? 'btn-primary' : 'btn-secondary'} tier-cta" style="width:100%">${t.cta}</a>
+        <ul class="tier-features">
+          ${t.features.map(f => `<li class="tier-feature"><span class="tier-check">${icon('check', '3')}</span><span>${f}</span></li>`).join('')}
+        </ul>
+      </div>
+    `).join('');
+
+    // Testimonials
+    const quotes = [
+      { body: "Lifecycle email used to live with the engineers. With one visual canvas, the PM owns it end to end — and we ship faster.", role: 'Growth Lead · SaaS startup', metric: 'Faster', metricLabel: 'iteration' },
+      { body: "Cloning landing pages used to take days of design and copy work. Now we can spin up campaign variants in an afternoon.", role: 'Demand Gen · E-commerce', metric: 'Hours', metricLabel: 'not days' },
+      { body: "Branching by behavior, plan and lifecycle stage is exactly how I'd sketch it on a whiteboard.", role: 'Lifecycle PM · Mobile app', metric: 'Clear', metricLabel: 'mental model' },
+      { body: "It's the first growth tool that doesn't make me hate growth tools. The canvas is calm. The data is honest.", role: 'Founder · Early-stage SaaS', metric: 'Calm', metricLabel: 'interface' },
+      { body: "Importing existing journeys was painless — the schema mapper just understood ours.", role: 'Eng Manager · Fintech', metric: 'One', metricLabel: 'afternoon' },
+      { body: "Setup made sense. Pricing made sense. The support replies in minutes when we have questions.", role: 'VP Marketing · B2B SaaS', metric: 'Fast', metricLabel: 'support' },
+    ];
+    document.getElementById('t-grid').innerHTML = quotes.map(q => `
+      <figure class="t-card">
+        <span style="color:var(--color-brand-400);opacity:.6;margin-left:-4px">${icon('quote', '5')}</span>
+        <blockquote class="t-quote">"${q.body}"</blockquote>
+        <div class="t-foot">
+          <figcaption class="t-role">${q.role}</figcaption>
+          <div class="text-right">
+            <div class="t-metric">${q.metric}</div>
+            <div class="t-metric-label">${q.metricLabel}</div>
+          </div>
+        </div>
+      </figure>
+    `).join('');
+  </script>
+</body>
+</html>
