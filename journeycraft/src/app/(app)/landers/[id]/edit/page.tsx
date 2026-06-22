@@ -260,7 +260,7 @@ function LanderPreview() {
         <span className="size-2.5 rounded-full bg-[oklch(0.7_0.18_27)]" />
         <span className="size-2.5 rounded-full bg-[oklch(0.78_0.16_80)]" />
         <span className="size-2.5 rounded-full bg-[oklch(0.7_0.18_140)]" />
-        <span className="ml-3 text-[11px] font-mono text-[var(--color-fg-muted)]">journeycraft.io/pricing</span>
+        <span className="ml-3 text-[11px] font-mono text-[var(--color-fg-muted)]">silvapixel.com/pricing</span>
       </div>
       <div className="px-10 pt-14 pb-12 text-center">
         <div className="text-[11px] font-semibold uppercase tracking-wider text-[var(--color-brand-600)] dark:text-[var(--color-brand-400)]">

@@ -50,7 +50,7 @@ export function Testimonials() {
             Built for the teams that ship growth every week
           </h2>
           <p className="mt-4 text-[15.5px] leading-[1.6] text-[var(--color-fg-muted)] text-pretty">
-            From scrappy startups to mature product teams — JourneyCraft is shaped around the way lifecycle, growth and product marketing actually work.
+            From scrappy startups to mature product teams — SilvaPixel is shaped around the way lifecycle, growth and product marketing actually work.
           </p>
           <p className="mt-3 text-[11.5px] uppercase tracking-wider font-semibold text-[var(--color-fg-subtle)]">
             Sample quotes · illustrative

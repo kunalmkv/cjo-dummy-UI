@@ -24,7 +24,7 @@ export function MarketingNav() {
             <span className="size-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-[var(--color-brand-500)] to-[var(--color-brand-700)] text-white shadow-[var(--shadow-pop)]">
               <Logo className="size-4" />
             </span>
-            <span className="font-display font-semibold text-[15px] tracking-tight">JourneyCraft</span>
+            <span className="font-display font-semibold text-[15px] tracking-tight">SilvaPixel</span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">

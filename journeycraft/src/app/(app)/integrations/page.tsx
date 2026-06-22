@@ -20,7 +20,7 @@ type Integration = {
 
 const items: Integration[] = [
   { name: "Payments connector", desc: "Sync payments, subscriptions and lifetime value.", category: "CRM", hue: 258, connected: true },
-  { name: "Event pipeline", desc: "Pipe events from anywhere into JourneyCraft.", category: "Analytics", hue: 200, connected: true },
+  { name: "Event pipeline", desc: "Pipe events from anywhere into SilvaPixel.", category: "Analytics", hue: 200, connected: true },
   { name: "Warehouse — reverse ETL", desc: "Activate warehouse audiences with reverse ETL.", category: "Data warehouse", hue: 195, connected: true },
   { name: "SMS provider", desc: "Send SMS at scale across global carriers.", category: "SMS", hue: 350 },
   { name: "Transactional email", desc: "Transactional email with reliable deliverability.", category: "Email", hue: 30, trending: true },

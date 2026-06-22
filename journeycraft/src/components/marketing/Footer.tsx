@@ -22,7 +22,7 @@ export function MarketingFooter() {
               <span className="size-8 rounded-lg flex items-center justify-center bg-gradient-to-br from-[var(--color-brand-500)] to-[var(--color-brand-700)] text-white">
                 <Logo className="size-4" />
               </span>
-              <span className="font-display font-semibold text-[15px] tracking-tight">JourneyCraft</span>
+              <span className="font-display font-semibold text-[15px] tracking-tight">SilvaPixel</span>
             </Link>
             <p className="mt-4 text-[13px] text-[var(--color-fg-muted)] max-w-xs text-pretty">
               The growth OS for product teams. Journeys, campaigns, landers and analytics — in one calm workspace.
@@ -58,7 +58,7 @@ export function MarketingFooter() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-[var(--color-border)] flex flex-col md:flex-row items-center justify-between gap-3 text-[11.5px] text-[var(--color-fg-muted)]">
-          <div>© 2026 JourneyCraft, Inc. All rights reserved.</div>
+          <div>© 2026 SilvaPixel, Inc. All rights reserved.</div>
           <div className="flex items-center gap-5">
             <a href="#" className="hover:text-[var(--color-fg)]">Privacy</a>
             <a href="#" className="hover:text-[var(--color-fg)]">Terms</a>

@@ -18,11 +18,11 @@ const navItems = [
 ];
 
 const members = [
-  { name: "Tanvir Ahmed", email: "tanvir@journey.app", role: "Owner", tone: "brand" as const },
-  { name: "Sara Khan", email: "sara@journey.app", role: "Admin", tone: "accent" as const },
-  { name: "Mohit Patel", email: "mohit@journey.app", role: "Editor", tone: "neutral" as const },
-  { name: "Lana Diaz", email: "lana@journey.app", role: "Editor", tone: "neutral" as const },
-  { name: "Reza Aslan", email: "reza@journey.app", role: "Viewer", tone: "neutral" as const },
+  { name: "Tanvir Ahmed", email: "tanvir@silvapixel.com", role: "Owner", tone: "brand" as const },
+  { name: "Sara Khan", email: "sara@silvapixel.com", role: "Admin", tone: "accent" as const },
+  { name: "Mohit Patel", email: "mohit@silvapixel.com", role: "Editor", tone: "neutral" as const },
+  { name: "Lana Diaz", email: "lana@silvapixel.com", role: "Editor", tone: "neutral" as const },
+  { name: "Reza Aslan", email: "reza@silvapixel.com", role: "Viewer", tone: "neutral" as const },
 ];
 
 export default function SettingsPage() {
@@ -65,13 +65,13 @@ export default function SettingsPage() {
             <CardContent className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <Field label="Workspace name">
-                  <Input defaultValue="JourneyCraft" />
+                  <Input defaultValue="SilvaPixel" />
                 </Field>
                 <Field label="Slug">
-                  <Input defaultValue="journeycraft" />
+                  <Input defaultValue="silvapixel" />
                 </Field>
                 <Field label="Default sender">
-                  <Input defaultValue="Sara from JourneyCraft <sara@journey.app>" />
+                  <Input defaultValue="Sara from SilvaPixel <sara@silvapixel.com>" />
                 </Field>
                 <Field label="Time zone">
                   <Input defaultValue="(GMT-05:00) Eastern" />

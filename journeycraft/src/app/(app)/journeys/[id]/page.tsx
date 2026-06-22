@@ -159,7 +159,7 @@ export default function JourneyBuilderPage({ params }: { params: Promise<{ id: s
               <Input defaultValue="Here's what to do in your first 10 minutes." />
             </Field>
             <Field label="From">
-              <Input defaultValue="Sara from JourneyCraft <sara@journey.app>" />
+              <Input defaultValue="Sara from SilvaPixel <sara@silvapixel.com>" />
             </Field>
             <Field label="Send at">
               <div className="flex gap-2">

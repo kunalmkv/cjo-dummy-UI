@@ -170,7 +170,7 @@ function WorkspaceSwitcher() {
           <Logo className="size-4" />
         </span>
         <span className="flex-1 min-w-0 text-left">
-          <span className="block text-[13px] font-semibold leading-tight font-display truncate">JourneyCraft</span>
+          <span className="block text-[13px] font-semibold leading-tight font-display truncate">SilvaPixel</span>
           <span className="block text-[10.5px] text-[var(--color-fg-muted)] leading-tight truncate">acme · Pro</span>
         </span>
         <ChevronsUpDown className="size-3.5 text-[var(--color-fg-subtle)]" strokeWidth={2} />

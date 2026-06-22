@@ -21,7 +21,7 @@ const display = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "JourneyCraft — Customer journeys, campaigns & landers",
+  title: "SilvaPixel — Customer journeys, campaigns & landers",
   description:
     "Build customer journeys, send campaigns, clone landing pages. The all-in-one growth OS for product teams.",
 };

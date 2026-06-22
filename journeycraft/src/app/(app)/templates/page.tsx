@@ -158,7 +158,7 @@ function Mock({ preview, hue, type }: { preview: string; hue: number; type: stri
           <div className="h-1 w-12 mx-auto rounded bg-[var(--color-fg)]/30 mt-1" />
           <div className="mt-4 rounded-xl border border-[var(--color-border)] p-2 space-y-1">
             <div className="text-[8px] uppercase tracking-wider text-[var(--color-fg-subtle)]">
-              {type === "SMS" ? "JourneyCraft" : "Notification"}
+              {type === "SMS" ? "SilvaPixel" : "Notification"}
             </div>
             <div className="text-[9px] leading-tight font-medium">
               {type === "SMS"

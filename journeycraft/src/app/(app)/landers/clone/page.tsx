@@ -139,7 +139,7 @@ export default function CloneWizardPage() {
               </p>
               <ul className="mt-3 space-y-2 text-[12.5px]">
                 {[
-                  "Replace company name → JourneyCraft",
+                  "Replace company name → SilvaPixel",
                   "Adjust pricing currency to USD",
                   "Soften tone (friendly + concise)",
                   "Translate to French + Spanish",

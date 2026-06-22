@@ -83,7 +83,7 @@ function EnvironmentBar() {
   return (
     <div className="absolute left-1/2 -translate-x-1/2 top-full hidden xl:flex items-center gap-2 px-3 py-1 rounded-b-xl border border-t-0 border-[var(--color-border)] bg-[var(--color-bg-elev)] text-[11px] shadow-[var(--shadow-card)]">
       <Badge tone="success" dot>Live</Badge>
-      <span className="text-[var(--color-fg-muted)]">api.journeycraft.io · v 16.2</span>
+      <span className="text-[var(--color-fg-muted)]">api.silvapixel.com · v 16.2</span>
     </div>
   );
 }
